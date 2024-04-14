@@ -1,6 +1,6 @@
 # pico-w-hello-world
 
-A simple hello-world example project targeting the Raspberry Pi Pico and using VSCode IDE
+A simple hello-world example project targeting the Raspberry Pi Pico W and using VSCode IDE
 
 ## Setup
 
