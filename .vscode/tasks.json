@@ -29,7 +29,7 @@
                 "isDefault": false
             },
             "problemMatcher": [],
-            "detail": "CMake template configure task",
+            "detail": "CMake template configure and build tasks",
             "dependsOn": ["CMake: configure"]
         },
         {
@@ -45,7 +45,7 @@
                 "isDefault": true
             },
             "problemMatcher": [],
-            "detail": "CMake template configure task",
+            "detail": "CMake template configure, build, and install tasks",
             "dependsOn": ["CMake: build"]
         },
 

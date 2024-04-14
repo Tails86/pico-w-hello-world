@@ -75,3 +75,7 @@ Use a serial communication terminal such as the [Serial Debug Assistant on the M
 
 Find a device under the Port Name which matches "USB Serial Device". Then make sure DTR is selected before opening the port. You should start to see "Hello" and "World" printed here.
 ![Serial Debug Assistant Example](docs/serial_output.jpg)
+
+## How This Project is Setup in Visual Studio Code
+
+[CMakePresets.json](CMakePresets.json) contains all of the definitions needed to configure and build this project. Visual Studio's cmake tool is able to find [CMakePresets.json](CMakePresets.json) because `cmake.useCMakePresets` is set to `always` in [.vscode/settings.json](.vscode/settings.json). Within [CMakePresets.json](CMakePresets.json), the value of `CMAKE_EXPORT_COMPILE_COMMANDS` is set to `true` in order to generate `compile_commands.json` under the directory specified for `binaryDir` (build). This file is pointed to under `compileCommands` of [.vscode/c_cpp_properties.json](.vscode/c_cpp_properties.json) which tells Visual Studio Code where to look for dependent source files. When you press `ctrl+shift+b` in Visual Studio Code, it activates the default task defined in [.vscode/tasks.json](.vscode/tasks.json) which runs configure, build, and install of CMake. Once the project is configured, Visual Studio's intellisense will properly work on all pico-sdk dependencies.
