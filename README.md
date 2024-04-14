@@ -4,7 +4,7 @@ A simple hello-world example project targeting the Raspberry Pi Pico W and using
 
 ## Licensing
 
-The [licensing](LICENSE) for this project only pertains to the code within this repository. It is up to the developer following these instructions to adhere to licenses of all 3rd party software and libraries being installed.
+The [licensing](LICENSE) for this project only pertains to all files within this repository. It is up to the developer following these instructions to adhere to licenses of all 3rd party software and libraries being installed.
 
 ## Setup
 
