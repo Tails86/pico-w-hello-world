@@ -17,6 +17,7 @@ target_compile_options(main PRIVATE
   -O3       # Optimize level 3
 )
 
+# Enable stdio through USB, disable stdio through UART
 pico_enable_stdio_usb(main 1)
 pico_enable_stdio_uart(main 0)
 
