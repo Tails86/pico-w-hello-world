@@ -70,10 +70,5 @@
           }
         ]
       }
-    ],
-    "vendor": {
-      "example.com/ExampleIDE/1.0": {
-        "autoFormat": false
-      }
-    }
+    ]
   }
