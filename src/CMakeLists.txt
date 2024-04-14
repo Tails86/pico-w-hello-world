@@ -13,7 +13,7 @@ target_link_libraries(main
 )
 target_compile_options(main PRIVATE
   -Wall     # All warnings
-  -Werror   # All errors
+  -Werror   # All warnings are treated as errors
   -O3       # Optimize level 3
 )
 
