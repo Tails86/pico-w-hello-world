@@ -45,7 +45,6 @@ cd ..
 5. Clone this repo.
 ```bash
 git clone https://github.com/Tails86/pico-w-hello-world.git
-
 ```
 
 6. Open this project in Visual Studio Code.
