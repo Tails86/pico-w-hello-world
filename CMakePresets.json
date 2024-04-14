@@ -1,0 +1,79 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 12,
+      "patch": 0
+    },
+    "include": [],
+    "configurePresets": [
+      {
+        "name": "default",
+        "displayName": "Default Config",
+        "description": "Default build",
+        "binaryDir": "${sourceDir}/build",
+        "cacheVariables": {
+            "CMAKE_ASM_COMPILER" : {
+                "type": "STRING",
+                "value": "/usr/bin/arm-none-eabi-gcc"
+            },
+            "CMAKE_CXX_COMPILER" : {
+                "type": "STRING",
+                "value": "/usr/bin/arm-none-eabi-g++"
+            },
+            "CMAKE_C_COMPILER" : {
+                "type": "STRING",
+                "value": "/usr/bin/arm-none-eabi-gcc"
+            },
+            "CMAKE_LINKER" : {
+                "type": "FILEPATH",
+                "value": "/usr/bin/arm-none-eabi-ld"
+            }
+        },
+        "environment": {},
+        "vendor": {},
+        "installDir": "${sourceDir}/dist"
+      }
+    ],
+    "buildPresets": [
+      {
+        "name": "default",
+        "configurePreset": "default"
+      }
+    ],
+    "packagePresets": [
+      {
+        "name": "default",
+        "configurePreset": "default",
+        "generators": [
+          "TGZ"
+        ],
+        "packageName": "pico-w-hello-world",
+        "packageDirectory": "${sourceDir}/dist"
+      }
+    ],
+    "workflowPresets": [
+      {
+        "name": "default",
+        "steps": [
+          {
+            "type": "configure",
+            "name": "default"
+          },
+          {
+            "type": "build",
+            "name": "default"
+          },
+          {
+            "type": "package",
+            "name": "default"
+          }
+        ]
+      }
+    ],
+    "vendor": {
+      "example.com/ExampleIDE/1.0": {
+        "autoFormat": false
+      }
+    }
+  }
