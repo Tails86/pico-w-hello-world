@@ -1,5 +1,8 @@
 {
-    "cmake.buildDirectory": "${workspaceFolder}/build",
     "cmake.configureOnEdit": false,
-    "cmake.installPrefix": "."
+    "cmake.useCMakePresets": "always",
+    "files.associations": {
+        "stdlib.h": "c",
+        "cyw43_arch.h": "c"
+    }
 }
